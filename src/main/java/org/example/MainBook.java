@@ -26,3 +26,22 @@ public class MainBook {
             int publicationYear = Integer.parseInt(scanner.nextLine()); // Reading the publication year from user input
             books.add(new Book(title, numberOfPages, publicationYear)); // Adding a new Book object to the list
         }
+
+        // Asking the user what to print
+
+
+        System.out.print("What would you like to print (everything/name): ");
+        String choice = scanner.nextLine(); // Reading the user's choice
+
+        // Printing based on user's choice
+        if (choice.equalsIgnoreCase("everything")) {
+            for (Book book : books) {
+                System.out.println(book); // Printing each Book object using the overridden toString() method
+            }
+        } else if (choice.equalsIgnoreCase("name")) {
+            for (Book book : books) {
+                System.out.println(book.getTitle()); // Printing only the titles of the books
+            }
+        }
+    }
+}
