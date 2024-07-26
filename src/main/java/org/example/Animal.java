@@ -20,3 +20,13 @@ public class Animal {
     public Animal() {
         this("Unknown", false);
     }
+
+    // Getter method to retrieve the name of the animal
+    public String getName() {
+        return name;
+    }
+
+    // Getter method to check if the animal is a dog
+    public boolean isDog() {
+        return isDog;
+    }
