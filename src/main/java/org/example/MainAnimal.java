@@ -24,3 +24,11 @@ public class MainAnimal {
             boolean isDog = Boolean.parseBoolean(scanner.nextLine()); // Reading if the animal is a dog from user input
             animals.add(new Animal(name, isDog)); // Adding a new Animal object to the list
         }
+
+        // Printing the animals entered
+        System.out.println("Animals entered:");
+        for (Animal animal : animals) {
+            System.out.println(animal); // Printing each Animal object using the overridden toString() method
+        }
+    }
+}
