@@ -10,3 +10,8 @@ public class Animal {
         this.name = name;
         this.isDog = isDog;
     }
+
+    // Constructor with only name, defaults isDog to false
+    public Animal(String name) {
+        this(name, false);
+    }
