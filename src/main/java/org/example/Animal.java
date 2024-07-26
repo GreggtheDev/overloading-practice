@@ -15,3 +15,8 @@ public class Animal {
     public Animal(String name) {
         this(name, false);
     }
+
+    // Default constructor, defaults name to "Unknown" and isDog to false
+    public Animal() {
+        this("Unknown", false);
+    }
