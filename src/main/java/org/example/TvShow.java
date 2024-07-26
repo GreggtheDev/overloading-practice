@@ -17,3 +17,8 @@ public class TvShow {
     public TvShow(String showName, String genre) {
         this(showName, 0, genre);
     }
+
+    // Default constructor, defaults values
+    public TvShow() {
+        this("Unknown", 0, "Unknown");
+    }
