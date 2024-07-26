@@ -12,3 +12,8 @@ public class TvShow {
         this.numberOfEpisodes = numberOfEpisodes;
         this.genre = genre;
     }
+
+    // Constructor with name and genre, defaults number of episodes to 0
+    public TvShow(String showName, String genre) {
+        this(showName, 0, genre);
+    }
