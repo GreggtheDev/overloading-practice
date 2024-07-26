@@ -26,3 +26,11 @@ public class MainTvShow {
             String genre = scanner.nextLine(); // Reading the genre from user input
             tvShows.add(new TvShow(showName, numberOfEpisodes, genre)); // Adding a new TvShow object to the list
         }
+
+        // Printing the TV shows entered
+        System.out.println("TV Shows entered:");
+        for (TvShow tvShow : tvShows) {
+            System.out.println(tvShow); // Printing each TvShow object using the overridden toString() method
+        }
+    }
+}
